@@ -4,8 +4,5 @@ document.getElementById('movie-form').addEventListener('submit', (e) => {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            document.querySelector('.films').innerHTML = `
-                <img src="${data.Poster}" />
-            `
         })
 })
